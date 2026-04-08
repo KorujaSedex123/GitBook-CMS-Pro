@@ -91,7 +91,6 @@ def escolher_espaco(headers):
         console.print("[red]❌ Nenhum projeto encontrado.[/red]")
         return None
         
-    # --- NOVO MENU INTERATIVO (MOUSE E SETAS) ---
     print("\n")
     opcoes = []
     for sp in espacos:
@@ -115,7 +114,7 @@ def escolher_espaco(headers):
 
     return espaco_escolhido
 
-def gerar_html():
+def main():
     os.system('cls' if os.name == 'nt' else 'clear')
     console.print(Panel.fit("[bold blue]Codex Extractor v2.2[/bold blue]\n[dim]Exportador Web App + Menu Interativo[/dim]", border_style="blue"))
     
@@ -519,4 +518,4 @@ def gerar_html():
     console.print(Panel(f"[bold green]✅ Sucesso![/bold green]\nO manual [bold white]{nome_projeto}[/bold white] foi salvo na pasta:\n[cyan]{arquivo_saida}[/cyan]", border_style="green"))
 
 if __name__ == "__main__":
-    gerar_html()
+    main()
